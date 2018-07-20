@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Custom Button Test Page</title>
+
+  <style>
+      #host::shadow .test {
+        color: red;
+      }
+    </style>  
+  <script src="elements.js"></script>
+  <script src="node_modules/angular/angular.min.js"></script>
+  <script src="js/index.js"></script>
+  <script src="node_modules/angular-custom-elements/dist/ce-bind.min.js"></script>
+  <script src="js/component.js"></script>
+</head>
+
+<body ng-app="elementsApp">
+
+  <div ng-controller="AppController">
+      <component></component>
+  </div>
+</body>
+
+</html>
